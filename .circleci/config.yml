@@ -23,8 +23,8 @@ jobs:
             sudo ./aws/install
       - run:
           command: |
-            aws configure set aws_access_key_id "AKIATOB3MZ6TUA24NAVW"
-            aws configure set aws_secret_access_key "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"
+            aws configure set aws_access_key_id ""
+            aws configure set aws_secret_access_key ""
             aws s3 sync dist/ s3://react-bucket12 --delete
 
 workflows:
